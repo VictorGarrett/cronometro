@@ -1,0 +1,69 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# File: G:\Aula\logica_reconfiguravel\crono\crono.csv
+# Generated on: Tue Dec 03 22:54:51 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Differential Pair
+clk,Input,PIN_N2,2,B2_N1,PIN_P2,,,,
+clr_btn,Input,PIN_N23,5,B5_N1,PIN_C13,,,,
+out_cd_debug[0],Output,,,,PIN_B12,,,,
+out_cd_debug[1],Output,,,,PIN_E12,,,,
+out_cd_debug[2],Output,,,,PIN_C12,,,,
+out_cd_debug[3],Output,,,,PIN_F12,,,,
+out_cd_disp[0],Output,PIN_T2,1,B1_N0,PIN_AF22,,,,
+out_cd_disp[1],Output,PIN_P6,1,B1_N0,PIN_W2,,,,
+out_cd_disp[2],Output,PIN_P7,1,B1_N0,PIN_AD4,,,,
+out_cd_disp[3],Output,PIN_T9,1,B1_N0,PIN_AE8,,,,
+out_cd_disp[4],Output,PIN_R5,1,B1_N0,PIN_AA20,,,,
+out_cd_disp[5],Output,PIN_R4,1,B1_N0,PIN_E20,,,,
+out_cd_disp[6],Output,PIN_R3,1,B1_N0,PIN_AF10,,,,
+out_cu_debug[0],Output,,,,PIN_B11,,,,
+out_cu_debug[1],Output,,,,PIN_D12,,,,
+out_cu_debug[2],Output,,,,PIN_G12,,,,
+out_cu_debug[3],Output,,,,PIN_C11,,,,
+out_cu_disp[0],Output,PIN_U9,1,B1_N0,PIN_AD23,,,,
+out_cu_disp[1],Output,PIN_U1,1,B1_N0,PIN_AB18,,,,
+out_cu_disp[2],Output,PIN_U2,1,B1_N0,PIN_W23,,,,
+out_cu_disp[3],Output,PIN_T4,1,B1_N0,PIN_T19,,,,
+out_cu_disp[4],Output,PIN_R7,1,B1_N0,PIN_L9,,,,
+out_cu_disp[5],Output,PIN_R6,1,B1_N0,PIN_AC23,,,,
+out_cu_disp[6],Output,PIN_T3,1,B1_N0,PIN_AB12,,,,
+out_sd_debug[0],Output,,,,PIN_B14,,,,
+out_sd_debug[1],Output,,,,PIN_G13,,,,
+out_sd_debug[2],Output,,,,PIN_F13,,,,
+out_sd_debug[3],Output,,,,PIN_G14,,,,
+out_sd_disp[0],Output,PIN_L3,2,B2_N1,PIN_AA14,,,,
+out_sd_disp[1],Output,PIN_L2,2,B2_N1,PIN_V5,,,,
+out_sd_disp[2],Output,PIN_L9,2,B2_N1,PIN_T8,,,,
+out_sd_disp[3],Output,PIN_L6,2,B2_N1,PIN_T18,,,,
+out_sd_disp[4],Output,PIN_L7,2,B2_N1,PIN_AD15,,,,
+out_sd_disp[5],Output,PIN_P9,2,B2_N1,PIN_C23,,,,
+out_sd_disp[6],Output,PIN_N9,2,B2_N1,PIN_F14,,,,
+out_su_debug[0],Output,,,,PIN_D14,,,,
+out_su_debug[1],Output,,,,PIN_A14,,,,
+out_su_debug[2],Output,,,,PIN_J11,,,,
+out_su_debug[3],Output,,,,PIN_J10,,,,
+out_su_disp[0],Output,PIN_R2,1,B1_N0,PIN_D5,,,,
+out_su_disp[1],Output,PIN_P4,1,B1_N0,PIN_C22,,,,
+out_su_disp[2],Output,PIN_P3,1,B1_N0,PIN_A6,,,,
+out_su_disp[3],Output,PIN_M2,2,B2_N1,PIN_V1,,,,
+out_su_disp[4],Output,PIN_M3,2,B2_N1,PIN_AE12,,,,
+out_su_disp[5],Output,PIN_M5,2,B2_N1,PIN_AC8,,,,
+out_su_disp[6],Output,PIN_M4,2,B2_N1,PIN_AB10,,,,
+rst,Input,PIN_N25,5,B5_N1,PIN_P1,,,,
+run_btn,Input,PIN_G26,5,B5_N0,PIN_D13,,,,

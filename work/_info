@@ -1,0 +1,215 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/Aula/logica_reconfiguravel/crono
+Econt_4b
+Z1 w1732663930
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 84b_counter.vhd
+Z6 F4b_counter.vhd
+l0
+L5
+Vm3fL8ChYKaN><@QoHE4Ti0
+!s100 115Mz;WjJK;KC`R=oZ7fe2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1733275021
+!i10b 1
+Z9 !s108 1733275021.000000
+Z10 !s90 -reportprogress|300|-2008|4b_counter.vhd|
+Z11 !s107 4b_counter.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+DEx4 work 7 cont_4b 0 22 m3fL8ChYKaN><@QoHE4Ti0
+l21
+L17
+V4E[:S;4@1@ZA76c]E]X4h1
+!s100 1mMY94nNl8lKF?6oDYkMe0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtador
+Z14 w1733264367
+R2
+R3
+R4
+R0
+Z15 8contador.vhd
+Z16 Fcontador.vhd
+l0
+L5
+VBEDocTbe3eQl>8Y65ACmU0
+!s100 BMg22TTz8IWRH:CY3k^1<0
+R7
+33
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-2008|contador.vhd|
+Z18 !s107 contador.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+R4
+DEx4 work 8 contador 0 22 BEDocTbe3eQl>8Y65ACmU0
+l47
+L20
+V]_Hb;gRVDL2JUf0O6d@3A3
+!s100 CXY3V?aN`VlY8HmOY=V>40
+R7
+33
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ecrono
+Z19 w1733274953
+R2
+R3
+R4
+R0
+Z20 8crono.vhd
+Z21 Fcrono.vhd
+l0
+L5
+VD]9DgCLDHCLYkzde]oW=d2
+!s100 N?0[XK_O>ARz6iC9IcCY83
+R7
+33
+Z22 !s110 1733275022
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-2008|crono.vhd|
+Z24 !s107 crono.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+R4
+DEx4 work 5 crono 0 22 D]9DgCLDHCLYkzde]oW=d2
+l56
+L25
+V0:iHEQ_POfLoSf^Z1XzQk0
+!s100 :F@z4NQPNF3V^zaAXn9@k2
+R7
+33
+R22
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Ecrono_tb
+Z25 w1733274704
+R2
+R3
+R4
+R0
+Z26 8crono_tb.vhd
+Z27 Fcrono_tb.vhd
+l0
+L5
+VR1JLQB4EUY@=^bJ=UJ:B73
+!s100 ]?G_j7Q@0=<h9c3[Szngm1
+R7
+33
+R22
+!i10b 1
+Z28 !s108 1733275022.000000
+Z29 !s90 -reportprogress|300|-2008|crono_tb.vhd|
+Z30 !s107 crono_tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R2
+R3
+R4
+Z31 DEx4 work 8 crono_tb 0 22 R1JLQB4EUY@=^bJ=UJ:B73
+l39
+L8
+Z32 VVk>VVe<OhJ;;UFD929DPB0
+Z33 !s100 b`i]2^X]C^a[W7DM@i=Kh1
+R7
+33
+R22
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R12
+R13
+Ehex_to_7_seg
+Z34 w1733274941
+R2
+R3
+R4
+R0
+Z35 8hex_to_7_seg.vhd
+Z36 Fhex_to_7_seg.vhd
+l0
+L5
+Vhfn<Saf_?nEJT`kkg5VU]0
+!s100 RS^eB4<zWbh?6@=<M0d6z3
+R7
+33
+R8
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-2008|hex_to_7_seg.vhd|
+Z38 !s107 hex_to_7_seg.vhd|
+!i113 1
+R12
+R13
+Ahex_to_7_seg_arch
+R2
+R3
+R4
+DEx4 work 12 hex_to_7_seg 0 22 hfn<Saf_?nEJT`kkg5VU]0
+l13
+L12
+V0XaICKjUI4X67Ylk@n_iB2
+!s100 e8NQ0?z;Cfl:AXQQ5^4Uh0
+R7
+33
+R8
+!i10b 1
+R9
+R37
+R38
+!i113 1
+R12
+R13

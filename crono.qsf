@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C35F484C7
+set_global_assignment -name DEVICE EP2C35F672C6
 set_global_assignment -name TOP_LEVEL_ENTITY crono
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:00  NOVEMBER 26, 2024"
@@ -49,3 +49,43 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name VHDL_FILE crono.vhd
 set_global_assignment -name VHDL_FILE contador.vhd
 set_global_assignment -name VHDL_FILE 4b_counter.vhd
+set_global_assignment -name VHDL_FILE hex_to_7_seg.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name VHDL_FILE crono_tb.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE enable_pulse_generator.vhd
+set_location_assignment PIN_N2 -to clk
+set_location_assignment PIN_N23 -to clr_btn
+set_location_assignment PIN_L3 -to out_sd_disp[0]
+set_location_assignment PIN_L2 -to out_sd_disp[1]
+set_location_assignment PIN_L9 -to out_sd_disp[2]
+set_location_assignment PIN_L6 -to out_sd_disp[3]
+set_location_assignment PIN_L7 -to out_sd_disp[4]
+set_location_assignment PIN_P9 -to out_sd_disp[5]
+set_location_assignment PIN_N9 -to out_sd_disp[6]
+set_location_assignment PIN_R2 -to out_su_disp[0]
+set_location_assignment PIN_P4 -to out_su_disp[1]
+set_location_assignment PIN_P3 -to out_su_disp[2]
+set_location_assignment PIN_M2 -to out_su_disp[3]
+set_location_assignment PIN_M3 -to out_su_disp[4]
+set_location_assignment PIN_M5 -to out_su_disp[5]
+set_location_assignment PIN_M4 -to out_su_disp[6]
+set_location_assignment PIN_P6 -to out_cd_disp[1]
+set_location_assignment PIN_P7 -to out_cd_disp[2]
+set_location_assignment PIN_T9 -to out_cd_disp[3]
+set_location_assignment PIN_R5 -to out_cd_disp[4]
+set_location_assignment PIN_R4 -to out_cd_disp[5]
+set_location_assignment PIN_R3 -to out_cd_disp[6]
+set_location_assignment PIN_U9 -to out_cu_disp[0]
+set_location_assignment PIN_U1 -to out_cu_disp[1]
+set_location_assignment PIN_U2 -to out_cu_disp[2]
+set_location_assignment PIN_T4 -to out_cu_disp[3]
+set_location_assignment PIN_R7 -to out_cu_disp[4]
+set_location_assignment PIN_R6 -to out_cu_disp[5]
+set_location_assignment PIN_T3 -to out_cu_disp[6]
+set_location_assignment PIN_N25 -to rst
+set_location_assignment PIN_G26 -to run_btn
+set_location_assignment PIN_T2 -to out_cd_disp[0]

@@ -12,7 +12,7 @@ entity contador is
 			clk: in std_logic;
 			rst: in std_logic;
 			en: in std_logic;
-			clr: in std_logic;
+			clr: in std_logic
 	);
 	
 end contador;
@@ -38,6 +38,9 @@ architecture arch of contador is
 	signal out_cd_s: unsigned(3 downto 0);
 	
 	signal cu_is_top: std_logic;
+	signal cd_is_top: std_logic;
+	signal su_is_top: std_logic;
+	signal sd_is_top: std_logic;
 	
 	
 	
@@ -55,11 +58,11 @@ begin
 	su_is_top <= out_su_s(3) and not out_su_s(2) and not out_su_s(1) and out_su_s(0);
 	sd_is_top <= not out_sd_s(3) and out_sd_s(2) and not out_sd_s(1) and out_sd_s(0);
 
-	counter_cu: cont_4b port map (rst=>rst, clk=>clk, en=>en, clr=>clr or cu_is_top, q=>out_cu_s, ld=>0, load=>"0000");
-	counter_cd: cont_4b port map (rst=>rst, clk=>clk, en=>en and u_is_top, clr=>clr or (cu_is_top and cd_is_top), q=>out_cd_s, ld=>0, load=>"0000");
+	counter_cu: cont_4b port map (rst=>rst, clk=>clk, en=>en, clr=>clr or cu_is_top, q=>out_cu_s, ld=>'0', load=>"0000");
+	counter_cd: cont_4b port map (rst=>rst, clk=>clk, en=>en and cu_is_top, clr=>clr or (cu_is_top and cd_is_top), q=>out_cd_s, ld=>'0', load=>"0000");
 
 	
-	counter_su: cont_4b port map (rst=>rst, clk=>clk, en=>en and cd_is_top and cu_is_top, clr=>clr or su_is_top, q=>out_su_s, ld=>0, load=>"0000");
-	counter_sd: cont_4b port map (rst=>rst, clk=>clk, en=>en and su_is_top, clr=>clr or (su_is_top and sd_is_top), q=>out_sd_s, ld=>0, load=>"0000");
+	counter_su: cont_4b port map (rst=>rst, clk=>clk, en=>en and cd_is_top and cu_is_top, clr=>clr or su_is_top, q=>out_su_s, ld=>'0', load=>"0000");
+	counter_sd: cont_4b port map (rst=>rst, clk=>clk, en=>en and su_is_top, clr=>clr or (su_is_top and sd_is_top), q=>out_sd_s, ld=>'0', load=>"0000");
 
 end architecture;

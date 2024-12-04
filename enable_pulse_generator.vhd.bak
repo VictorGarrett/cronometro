@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity enable_pulse_generator is
+    port(
+        clk_in  : in  std_logic;  -- Clock de entrada (10 MHz)
+        rst     : in  std_logic;  -- Reset
+        enable  : out std_logic   -- Pulso de habilitação (ativo por 1 ciclo)
+    );
+end enable_pulse_generator;
+
+architecture behavioral of enable_pulse_generator is
+    constant COUNT_MAX : unsigned(19 downto 0) := to_unsigned(100_000 - 1, 20); -- 100.000 ciclos - 1
+    signal counter     : unsigned(19 downto 0) := (others => '0'); -- Contador de 20 bits
+    signal enable_reg  : std_logic := '0'; -- Sinal registrado para a saída
+begin
+
+    process(clk_in, rst)
+    begin
+        if rst = '1' then
+            counter <= (others => '0');
+            enable_reg <= '0';
+        elsif rising_edge(clk_in) then
+            if counter = COUNT_MAX then
+                counter <= (others => '0'); -- Reinicia o contador
+                enable_reg <= '1';          -- Gera o pulso
+            else
+                counter <= counter + 1;     -- Incrementa o contador
+                enable_reg <= '0';          -- Mantém a saída baixa
+            end if;
+        end if;
+    end process;
+
+    enable <= enable_reg; -- Saída do pulso de habilitação
+
+end behavioral;

@@ -1,0 +1,21 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+entity hex_to_7_seg is
+    port(
+        H: in std_logic_vector(0 to 3);
+        Q: out std_logic_vector(0 to 6)
+    );
+end hex_to_7_seg;
+    
+architecture hex_to_7_seg_arch of hex_to_7_seg is
+    begin
+        Q(0) <= (NOT H(3) AND NOT H(2) AND NOT H(1) AND H(0)) OR (NOT H(3) AND H(2) AND NOT H(1) AND NOT H(0)) OR (H(3) AND H(2) AND NOT H(1) AND H(0)) OR (H(3) AND NOT H(2) AND H(1) AND H(0));
+        Q(1) <= (H(3) AND H(1) AND H(0)) OR (H(2) AND H(1) AND NOT H(0)) OR (H(3) AND H(2) AND NOT H(0)) OR (NOT H(3) AND H(2) AND NOT H(1) AND H(0));
+        Q(2) <= (H(3) AND H(2) AND H(1)) OR (H(3) AND H(2) AND NOT H(0)) OR (NOT H(3) AND NOT H(2) AND H(1) AND NOT H(0));
+        Q(3) <= (H(2) AND H(1) AND H(0)) OR (NOT H(3) AND H(2) AND NOT H(1) AND NOT H(0)) OR (H(3) AND H(2) AND H(1) AND H(0)) OR (NOT H(3) AND NOT H(2) AND NOT H(1) AND H(0)) OR (H(3) AND NOT H(2) AND H(1) AND NOT H(0));
+        Q(4) <= (NOT H(3) AND H(0)) OR (NOT H(2) AND NOT H(1) AND H(0)) OR (NOT H(3) AND H(2) AND NOT H(1));
+        Q(5) <= (H(3) AND H(2) AND NOT H(1) AND H(0)) OR (NOT H(3) AND NOT H(2) AND H(1)) OR (NOT H(3) AND NOT H(2) AND H(0)) OR (NOT H(3) AND H(1) AND H(0));
+        Q(6) <= (NOT H(3) AND NOT H(2) AND NOT H(1)) OR (NOT H(3) AND H(2) AND H(1) AND H(0)) OR (H(3) AND H(2) AND NOT H(1) AND NOT H(0));
+
+    end hex_to_7_seg_arch;
